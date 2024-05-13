@@ -70,10 +70,14 @@ Z represents a protected resource, for example, "/accounts".
       - Unanimous: Negative if permissions are in conflict(one is P, another is N).
       - Affirmaative: Positive if permissions are in conflict(one is P, another is N).
     - Remote resource management: if False, resources can be managed only from the admin console.
-  - Resources
-  - Scopes
-  - Policies
-  - Permissions
+  - Resource: An object being protected. An asset of an app and org.
+  - Scope: A bounded extent of access that is possible to perform on a resource, like verbs. (ex. `view, edit, delete, or cost, etc.`)
+  - Policy
+  - Permission
+    - __X__ CAN DO __Y__ ON RESOURCE __Z__
+      - __X__: Users, roles, Groups, etc.
+      - __Y__: An action. ex. write, view, ...
+      - __Z__: 
   - Evaluate
   - Export
 
@@ -81,7 +85,7 @@ Z represents a protected resource, for example, "/accounts".
 
 * Resources
   - `Default Resource`: all resources(`/*`)
-  - Type: `urn:<realm>:resources:default`
+  - Type(`urn:<realm>:resources:default`): It can be used to group resources together
 * Policies(referred to as the only from realm policy)
   - `Default Policy`: Javascript-based policy (`$evaluation.grant();`)
 * Permission
