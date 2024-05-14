@@ -77,7 +77,11 @@ Z represents a protected resource, for example, "/accounts".
     - __X__ CAN DO __Y__ ON RESOURCE __Z__
       - __X__: Users, roles, Groups, etc.
       - __Y__: An action. ex. write, view, ...
-      - __Z__: 
+      - __Z__: A protected resource. ex. "/accounts"
+    - Resource-based Permission
+      - Resource itself
+      - Resource Type
+    - Scope-based Permission
   - Evaluate
   - Export
 
