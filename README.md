@@ -139,3 +139,19 @@ Define conditions for your permission, where a __type__ is permitted to access a
 1. Name a Role
 2. Define a Policy: False(Role) or True(Role)
 3. 
+
+
+---
+## Summary
+
+* Permission
+  * Resource-based: working on Resources directly
+  * Scope-based: working on scopes or scopes with resources
+* Resources: Objects which users will be accessisng or performing an action on
+* Authorization Scopes: Actions that users can perform on the specific object
+* Policies: Resource protection using fine-grained authorization policies and different access control mechanisms
+* Permissions: Mapping actually occur here
+
+![image](https://github.com/pydemia/keycloak/assets/18019100/a5395756-9f0d-40e7-a040-03a66111134f)
+
+See: https://medium.com/@harsh.manvar111/keycloak-authorization-service-rbac-1c3204a33a50
