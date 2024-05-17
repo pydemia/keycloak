@@ -144,6 +144,14 @@ Define conditions for your permission, where a __type__ is permitted to access a
 ---
 ## Summary
 
+0. realm
+1. realm-role
+2. client
+3. scope
+4. resource
+5. policy
+6. permission(scoped)
+
 * Permission
   * Resource-based: working on Resources directly
   * Scope-based: working on scopes or scopes with resources
