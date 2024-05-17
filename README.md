@@ -98,7 +98,8 @@ Z represents a protected resource, for example, "/accounts".
 5. Export and import the configuration
 
 ### Manage Resources and Scopes
-
+> Can I define all future-coming resources for now?
+> > Just define an upper level: domains
 
 
 ### Manage Policies
