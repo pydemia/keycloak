@@ -78,6 +78,10 @@ Z represents a protected resource, for example, "/accounts".
       - __X__: Users, roles, Groups, etc.
       - __Y__: An action. ex. write, view, ...
       - __Z__: A protected resource. ex. "/accounts"
+    - Dicision strategy
+      - Unanimous: Negative if permissions are in conflict(one is P, another is N).
+      - Affirmaative: Positive if permissions are in conflict(one is P, another is N).
+      - Consensus: Positive decision counts > Negative decision counts
     - Resource-based Permission
       - Resource itself
       - Resource Type
@@ -101,10 +105,37 @@ Z represents a protected resource, for example, "/accounts".
 > Can I define all future-coming resources for now?
 > > Just define an upper level: domains
 
+Use `Types`: 
+
 
 ### Manage Policies
 
+Define conditions for your permission, where a __type__ is permitted to access an object.
+
+* JS (default one): 
+* Aggregated: A Composite policy
+* Client: by __clients__
+* Client Scope: by __client scopes__
+* Group: by __group__
+* User: by __user__
+* Regex: regex
+* Role: by __role__
+* Time: time condition
+
 ### Manage Permissions
+
+* Resource-based Permission: require `Resource`
+* __Scope-based Permission__: require `Authorization scope`
 
 ### Test the policies
 
+* Scope-based Permission
+  * Authorization scopes
+  * Policies
+    * Roles: `Realm roles` or `Client roles`
+    * Logic: `Positive` & `Negative`
+
+
+1. Name a Role
+2. Define a Policy: False(Role) or True(Role)
+3. 
